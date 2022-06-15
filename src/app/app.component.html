@@ -1,1 +1,14 @@
-directives
+<main>
+  <h1>Structural directives</h1>
+  <section *hideAfter='5000; later placeholder' class='banner primary'>
+    <h2>Temporary content</h2>
+    <p>This layout should dissapear in 5 seconds</p>
+  </section>
+
+  <ng-template #placeholder>
+    <section class='banner red'>
+      <h2>Temporary content</h2>
+      <p>This layout should dissapear in 5 seconds</p>
+    </section>
+  </ng-template>
+</main>
