@@ -1,0 +1,5 @@
+<div *carousel="let image of images; let ctr = ctr">
+  <img width='100' [src]="image" />
+  <button (click)="ctr.prev()">Prev</button>
+  <button (click)="ctr.next()">Next</button>
+</div>

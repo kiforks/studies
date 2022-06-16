@@ -7,9 +7,11 @@ import { HideAfterComponent } from './components/hide-after/hide-after.component
 import { HideAfterDirective } from './hide-after.directive';
 import { IterateDirective } from './iterate.directive';
 import { IterateComponent } from './components/iterate/iterate.component';
+import { CarouselDirective } from './carousel.directive';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
-	declarations: [AppComponent, HideAfterDirective, HideAfterComponent, IterateDirective, IterateComponent],
+	declarations: [AppComponent, HideAfterDirective, HideAfterComponent, IterateDirective, IterateComponent, CarouselDirective, CarouselComponent],
 	imports: [BrowserModule, AppRoutingModule],
 	providers: [],
 	bootstrap: [AppComponent],
