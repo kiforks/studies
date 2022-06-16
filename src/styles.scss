@@ -1,13 +1,35 @@
 /* stylelint-disable */
 .banner {
+  color: white;
   border-radius: 8px;
+  padding: 5px 10px;
+  border: 2px dashed yellow;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.15);
 
+  p {
+    margin: 0;
+  }
+
+  h2 {
+    font-weight: 600;
+    margin-top: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  p  {
+    + p {
+      margin-top: 10px;
+    }
+  }
+
   &.primary {
-    background-color: greenyellow;
+    background-color: darkgreen;
   }
 
   &.red {
-    background-color: red;
+    background-color: darkred;
   }
 }

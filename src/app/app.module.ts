@@ -9,9 +9,10 @@ import { IterateDirective } from './iterate.directive';
 import { IterateComponent } from './components/iterate/iterate.component';
 import { CarouselDirective } from './carousel.directive';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { IfLoadedDirective } from './if-loaded.directive';
 
 @NgModule({
-	declarations: [AppComponent, HideAfterDirective, HideAfterComponent, IterateDirective, IterateComponent, CarouselDirective, CarouselComponent],
+	declarations: [AppComponent, HideAfterDirective, HideAfterComponent, IterateDirective, IterateComponent, CarouselDirective, CarouselComponent, IfLoadedDirective],
 	imports: [BrowserModule, AppRoutingModule],
 	providers: [],
 	bootstrap: [AppComponent],

@@ -1,7 +1,7 @@
 <main>
   <h1>Structural directives</h1>
 
-  <section *hideAfter="5000 as time; then placeholder; let counter = cxounter; let defaultValue;" class="banner primary">
+  <section *hideAfter="5000 as time; then placeholder; let counter = counter; let defaultValue;" class="banner primary">
     <h2>Temporary content</h2>
     <p>This layout should dissapear in {{ defaultValue }} seconds. It disappears in: {{ counter }}</p>
   </section>
@@ -9,7 +9,7 @@
   <ng-template #placeholder let-hideAfter="hideAfter" let-myDefault>
     <section class="banner red">
       <h2>Temporary content</h2>
-      <p>Content. It was visible for {{ hideAfter }} seconds. {{ myDefault }}</p>
+      <p>Content. It was visible for {{ hideAfter }} seconds. Default value = {{ myDefault }}</p>
     </section>
   </ng-template>
 </main>
